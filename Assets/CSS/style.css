@@ -1,0 +1,169 @@
+/* Will be removed later
+div, header, footer, nav, section{
+    background-color: rgba(255,255,255,0.5) ;
+    border: dashed black 1px;
+} */
+
+
+/* CSS General */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 80%;
+    margin:auto;
+    background-image: url(../images/deninstransp.jpg);
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    clear:both;
+}
+
+/* Header */
+
+header{
+    background-color:none;
+}
+
+h1{
+    color: rgb(59, 59, 148);
+    font-family: Trebuchet;
+    font-weight: bold;
+    text-shadow: 5px 3px 2px pink;
+    padding: 10px;
+    text-align: center;
+    font-size: 72px;
+}
+
+/* NAV */   
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 25%;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    float: left;
+    border-radius: 50%;
+    font-family:'cursive';
+    font-size: 2em;
+}
+
+nav ul li a{
+    text-decoration:none;
+}
+
+nav ul li:hover{
+    background-color: thistle;
+}
+
+/* Sobre */
+/* products */
+
+#pics_list{
+    list-style: none;
+}
+
+#pics_list li img{
+    width: calc(1/3 * 100%);
+    min-width: 300px;
+    float: left;
+    border-radius: 30%;
+
+}
+
+/* Blog */
+#blog{
+    clear:both;
+}
+
+#blogdiv{
+    width:100%;
+    min-height: 300px;
+    max-height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+}
+
+.footer_div{
+    margin: auto;
+    padding:10px;
+    width:calc(50% - 50px);
+    /* min-width: 280px; */
+}
+
+#address{
+}
+#Social_Media{
+    min-width: 180px;
+}
+#Social_Media img{
+    max-width: 50px;
+}
+
+#creator{
+    font-size: 10px;
+    clear:both;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* To full Screen */
+/* To not Full Screen */
+@media screen and (max-width: 1200px){
+    body{
+        background-color: violet;
+    }
+    /* products */
+    #pics_list li img{
+        width: 80%;
+        display:block;
+        margin: auto;
+        float:none;
+        border-radius: 30%;
+
+    }
+    
+}
+
+/* To mobiles */
+@media  screen and (max-width: 768px) {
+    body{
+        background-color: blue;
+    }
+    
+    nav ul li{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        float: none;
+        border-radius: 50%;
+        font-family:'cursive';
+        font-size: 2em;
+    }
+    #pics_list li img{
+        width: 100%;
+        display:block;
+        margin: auto;
+        min-width: 300px;
+        float:none;
+        border-radius: 30%;
+
+    }
+
+    .item_menu{
+        float:left;
+        float: left;
+}
